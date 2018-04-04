@@ -4,6 +4,19 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   background: #578ee5;
+}
+
+.page {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page img {
+  width: 100px;
 }

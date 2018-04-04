@@ -1,6 +1,6 @@
-import {Component, OnInit} from "@angular/core";
-import {ApiService} from "../api.service";
-import {ActivatedRoute} from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {ApiService, IGuide} from "../api.service";
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-guide',
@@ -9,10 +9,13 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class GuideComponent implements OnInit {
 
+  get guides(): IGuide[] {
+    return this.route.snapshot.data.guides;
+  }
+
   constructor(private api: ApiService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    console.log('data', this.route.snapshot.data);
   }
 
 }

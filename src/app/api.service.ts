@@ -2,21 +2,21 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 
-interface IGuide {
+export interface IGuide {
   id: number;
   title: string;
   description: string;
   img: string;
 }
 
-interface IAnimal {
+export interface IAnimal {
   id: number;
   title: string;
   description: string;
   img: string;
 }
 
-interface IGlass {
+export interface IGlass {
   id: number;
   img: string;
 }

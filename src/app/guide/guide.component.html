@@ -1,6 +1,9 @@
-<p>
-  guide works!
-</p>
+
+<div class="page page-{{item.id}}" *ngFor="let item of guides">
+  <img [attr.src]="item.img" [attr.alt]="item.title">
+  <h2>{{item.title}}</h2>
+  <p>{{item.description}}</p>
+</div>
 
 <p>
   <a routerLink="/">Далее</a>
