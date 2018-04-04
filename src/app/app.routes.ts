@@ -3,6 +3,7 @@ import {IndexComponent} from './index/index.component';
 import {GuideComponent} from './guide/guide.component';
 import {IndexGuard} from './index.guard';
 import {GuideGuard} from './guide.guard';
+import {GuideResolver} from './guide/guide.resover';
 
 export const appRoutes: Route[] = [
   {
@@ -13,6 +14,7 @@ export const appRoutes: Route[] = [
   {
     path: 'guide',
     component: GuideComponent,
+    resolve: {guides: GuideResolver},
     canDeactivate: [GuideGuard]
   },
   {
