@@ -1,0 +1,92 @@
+{
+  "glasses" : [
+    {
+      "id": 1,
+      "img": "//image.flaticon.com/icons/svg/146/146637.svg"
+    },
+    {
+      "id": 2,
+      "img": "//image.flaticon.com/icons/svg/346/346202.svg"
+    },
+    {
+      "id": 3,
+      "img": "//image.flaticon.com/icons/svg/609/609577.svg"
+    },
+    {
+      "id": 4,
+      "img": "//image.flaticon.com/icons/svg/280/280086.svg"
+    },
+    {
+      "id": 5,
+      "img": "//image.flaticon.com/icons/svg/433/433117.svg"
+    },
+    {
+      "id": 6,
+      "img": "//image.flaticon.com/icons/svg/297/297879.svg"
+    }
+  ],
+  "animals" : [
+    {
+      "id": 1,
+      "title" : "Fox",
+      "description" : "Frr Frr!",
+      "img" : "//image.flaticon.com/icons/svg/141/141739.svg"
+    },
+    {
+      "id": 2,
+      "title" : "Bull",
+      "description" : "Mu muuu!",
+      "img" : "//image.flaticon.com/icons/svg/141/141736.svg"
+    },
+    {
+      "id": 3,
+      "title" : "Chick",
+      "description" : "Chick-chirick!",
+      "img" : "//image.flaticon.com/icons/svg/141/141737.svg"
+    },
+    {
+      "id": 4,
+      "title" : "Crab",
+      "description" : "Klatz klatz!",
+      "img" : "//image.flaticon.com/icons/svg/141/141738.svg"
+    },
+    {
+      "id": 5,
+      "title" : "Tiger",
+      "description" : "Yaarrrrrrr!",
+      "img" : "//image.flaticon.com/icons/svg/141/141745.svg"
+    },
+    {
+      "id": 6,
+      "title" : "Pig",
+      "description" : "Hru hru!",
+      "img" : "//image.flaticon.com/icons/svg/141/141744.svg"
+    },
+    {
+      "id": 7,
+      "title" : "Koala",
+      "description" : "???",
+      "img" : "//image.flaticon.com/icons/svg/141/141742.svg"
+    }
+  ],
+  "guide": [
+    {
+      "id": 1,
+      "title" : "Choose animal",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "img" : "//image.flaticon.com/icons/svg/141/141745.svg"
+    },
+    {
+      "id": 2,
+      "title" : "Customize it",
+      "description" : "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "img" : "//image.flaticon.com/icons/svg/141/141744.svg"
+    },
+    {
+      "id": 2,
+      "title" : "Share it",
+      "description" : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "img" : "//image.flaticon.com/icons/svg/141/141742.svg"
+    }
+  ]
+}
