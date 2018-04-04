@@ -6,6 +6,7 @@ import {GuideGuard} from './guide.guard';
 import {GuideResolver} from './guide/guide.resover';
 import {AnimalsResolver} from './index/animals.resover';
 import {GlassesResolver} from './index/glasses.resover';
+import {GuidePageComponent} from "./guide-page/guide-page.component";
 
 export const appRoutes: Route[] = [
   {
@@ -23,7 +24,10 @@ export const appRoutes: Route[] = [
     resolve: {
       guides: GuideResolver
     },
-    canDeactivate: [GuideGuard]
+    canDeactivate: [GuideGuard],
+    children: [
+      {path: ':id', component: GuidePageComponent}
+    ]
   },
   {
     path: '**',

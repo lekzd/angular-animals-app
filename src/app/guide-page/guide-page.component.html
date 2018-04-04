@@ -1,0 +1,7 @@
+<div class="page page-{{page.id}}">
+  <img [attr.src]="page.img" [attr.alt]="page.title">
+  <h2>{{page.title}}</h2>
+  <p>{{page.description}}</p>
+
+  <button *ngIf="hasGuide(page.id)" (click)="next()">Следующий</button>
+</div>

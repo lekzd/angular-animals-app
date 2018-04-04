@@ -17,7 +17,7 @@ export class IndexGuard implements CanActivate {
       return true;
     }
 
-    this.router.navigateByUrl('/guide');
+    this.router.navigateByUrl('/guide/0');
 
     return false;
   }

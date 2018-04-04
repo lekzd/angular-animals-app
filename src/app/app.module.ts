@@ -12,12 +12,14 @@ import {ApiService} from './api.service';
 import {GuideResolver} from './guide/guide.resover';
 import {AnimalsResolver} from './index/animals.resover';
 import {GlassesResolver} from './index/glasses.resover';
+import { GuidePageComponent } from './guide-page/guide-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    GuideComponent
+    GuideComponent,
+    GuidePageComponent
   ],
   imports: [
     BrowserModule,
