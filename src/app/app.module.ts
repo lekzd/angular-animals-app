@@ -7,6 +7,8 @@ import {RouterModule} from '@angular/router';
 import {appRoutes} from './app.routes';
 import {IndexGuard} from './index.guard';
 import {GuideGuard} from './guide.guard';
+import {HttpClientModule} from '@angular/common/http';
+import {ApiService} from './api.service';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,12 @@ import {GuideGuard} from './guide.guard';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
-      appRoutes,
-      {enableTracing: true}
+      appRoutes
     )
   ],
-  providers: [IndexGuard, GuideGuard],
+  providers: [IndexGuard, GuideGuard, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
