@@ -11,3 +11,24 @@
 h1 {
   display: block;
 }
+
+.preview {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.animal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.glasses {
+  position: absolute;
+  left: 4%;
+  top: 0;
+  width: 70%;
+}

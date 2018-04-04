@@ -9,7 +9,9 @@ import {IndexGuard} from './index.guard';
 import {GuideGuard} from './guide.guard';
 import {HttpClientModule} from '@angular/common/http';
 import {ApiService} from './api.service';
-import {GuideResolver} from "./guide/guide.resover";
+import {GuideResolver} from './guide/guide.resover';
+import {AnimalsResolver} from './index/animals.resover';
+import {GlassesResolver} from './index/glasses.resover';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import {GuideResolver} from "./guide/guide.resover";
       appRoutes
     )
   ],
-  providers: [IndexGuard, GuideGuard, ApiService, GuideResolver],
+  providers: [IndexGuard, GuideGuard, ApiService, GuideResolver, AnimalsResolver, GlassesResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

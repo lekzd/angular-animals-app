@@ -28,16 +28,16 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  getGuides(): Observable<IGuide> {
-    return this.http.get<IGuide>(`${url}/guide`);
+  getGuides(): Observable<IGuide[]> {
+    return this.http.get<IGuide[]>(`${url}/guide`);
   }
 
-  getAnimals(): Observable<IAnimal> {
-    return this.http.get<IAnimal>(`${url}/animals`);
+  getAnimals(): Observable<IAnimal[]> {
+    return this.http.get<IAnimal[]>(`${url}/animals`);
   }
 
-  getGlasses(): Observable<IGlass> {
-    return this.http.get<IGlass>(`${url}/glasses`);
+  getGlasses(): Observable<IGlass[]> {
+    return this.http.get<IGlass[]>(`${url}/glasses`);
   }
 
 }

@@ -1,14 +1,14 @@
 import {Injectable} from '@angular/core';
 import {Resolve} from '@angular/router';
 import {Observable} from 'rxjs/Observable';
-import {ApiService, IGuide} from '../api.service';
+import {ApiService, IAnimal} from '../api.service';
 
 @Injectable()
-export class GuideResolver implements Resolve<IGuide[]> {
+export class AnimalsResolver implements Resolve<IAnimal[]> {
 
   constructor(private api: ApiService) {}
 
-  resolve(): Observable<IGuide[]> {
-    return this.api.getGuides();
+  resolve(): Observable<IAnimal[]> {
+    return this.api.getAnimals();
   }
 }

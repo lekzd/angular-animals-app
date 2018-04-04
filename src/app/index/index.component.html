@@ -1,9 +1,20 @@
 <h1 class="title">
-  Hello world
+  {{animal.title}}
 </h1>
 <p>
-  index works!
+  {{animal.description}}
 </p>
+
+<div class="preview">
+  <img class="animal" [attr.src]="animal.img" [attr.alt]="animal.title" width="100">
+  <img class="glasses" [attr.src]="glasses.img" width="100">
+</div>
+
+
+<p>
+  <button (click)="refresh()">Обновить!</button>
+</p>
+
 
 <p>
   <a routerLink="/guide">Гайд</a>
