@@ -5,17 +5,26 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #bae56b;
+  /*background: #bae56b;*/
+  user-select: none;
+
+  background: #50ce50;
+  background: -moz-radial-gradient(center, ellipse cover, #50ce50 0%, #32893b 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #50ce50 0%,#32893b 100%);
+  background: radial-gradient(ellipse at center, #50ce50 0%,#32893b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#50ce50', endColorstr='#32893b',GradientType=1 );
 }
 
-h1 {
+.title {
   display: block;
+  color: #bff646;
+  font-size: 60px;
 }
 
 .preview {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   margin-bottom: 30px;
 }
 
@@ -26,9 +35,92 @@ h1 {
   width: 100%;
 }
 
+/deep/ .animal-Pig {
+  left: 11% !important;
+}
+
+/deep/ .animal-Tiger {
+  left: 11% !important;
+  top: 2% !important;
+}
+
+/deep/ .animal-Fox {
+  left: 11% !important;
+}
+
+/deep/ .animal-Bull {
+  left: 6% !important;
+  top: -2% !important;
+}
+
 .glasses {
   position: absolute;
-  left: 4%;
+  left: 16%;
   top: 0;
   width: 70%;
+}
+
+.bubble {
+  position: relative;
+  background: #fff;
+  color: #333;
+  padding: 15px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.bubble:before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 7px);
+  bottom: -14px;
+  border: 7px solid transparent;
+  border-top-color: #ffffff;
+}
+
+.refresh {
+  position: relative;
+  top: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 7px 20px;
+  width: 200px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+  border: 5px solid transparent;
+  border-bottom-color: rgba(0,0,0,0.35);
+  background: hsl(4, 91%, 60%);
+  cursor: pointer;
+  outline: 0 !important;
+
+  animation: pulse 1s infinite alternate;
+  transition: background 0.4s, border 0.2s, top 0.2s, transform 0.2s;
+}
+.refresh:hover {
+  background: hsl(14, 93%, 53%);
+  top: 1px;
+
+  animation: none;
+}
+.refresh:active {
+  border-bottom-width: 0;
+  transform: scale(2);
+  top: 5px;
+}
+
+@keyframes pulse {
+  0% {
+    top: 0px;
+    transform: rotate(10deg);
+  }
+  50% {
+    top: 6px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 6px;
+    transform: rotate(-10deg);
+  }
 }

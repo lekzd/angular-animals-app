@@ -3,5 +3,5 @@
   <h2>{{page.title}}</h2>
   <p>{{page.description}}</p>
 
-  <button *ngIf="hasGuide(page.id)" (click)="next()">Следующий</button>
+  <button *ngIf="hasGuide(page.id)" (click)="next()" class="next">Следующий</button>
 </div>

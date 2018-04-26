@@ -1,8 +1,16 @@
 :host {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   align-items: center;
   justify-content: center;
   background: #578ee5;
+
+
+  background: #578ee5;
+  background: -moz-radial-gradient(center, ellipse cover, #578ee5 0%, #274f89 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #578ee5 0%,#274f89 100%);
+  background: radial-gradient(ellipse at center, #578ee5 0%,#274f89 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#578ee5', endColorstr='#274f89',GradientType=1 );
 }
